@@ -27,7 +27,7 @@ MoodChanger.AI is a cutting-edge application that leverages artificial intellige
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/devflomad/moodchanger-website.git
+git clone https://github.com/FlomadLabsRD/moodchanger-website.git
 cd moodchanger-website
 ```
 
