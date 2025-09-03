@@ -38,7 +38,7 @@ export default function Page() {
               Coming Soon
             </h1>
             <p className="mx-auto max-w-3xl text-lg leading-relaxed text-white/70 lg:text-xl">
-              We're building something amazing. While we craft the full experience, explore our presentation below to discover what MOODCHANGER.AI is all about.
+              We&apos;re building something amazing. While we craft the full experience, explore our presentation below to discover what MOODCHANGER.AI is all about.
             </p>
           </div>
 
