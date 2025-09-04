@@ -7,6 +7,11 @@ export const metadata = {
   title: 'MOODCHANGER.AI',
   description: 'Transforming your mood, one insight at a time. A Flomad Labs product.',
   metadataBase: new URL('https://moodchanger.ai'),
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
