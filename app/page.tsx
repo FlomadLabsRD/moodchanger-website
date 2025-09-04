@@ -31,9 +31,9 @@ export default function Page() {
         {/* Background gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#2aa68a]/5 via-transparent to-[#0d2430]" />
         
-        <div className="relative mx-auto max-w-7xl px-6 pt-64 pb-48 lg:pt-80 lg:pb-56">
+        <div className="relative mx-auto max-w-7xl px-6 pt-16 pb-24 lg:pt-20 lg:pb-32">
           {/* Hero Text */}
-          <div className="mb-12 text-center py-8">
+          <div className="mb-8 text-center">
             <h1 className="mb-4 text-4xl font-bold leading-tight tracking-tight lg:text-5xl text-white">
               Coming Soon
             </h1>
