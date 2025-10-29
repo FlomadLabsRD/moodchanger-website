@@ -104,7 +104,7 @@ export default function Page() {
             <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/2 p-6 transition-all duration-300 hover:border-[#FDE035]/30 hover:shadow-lg hover:shadow-[#FDE035]/10">
               <h3 className="mb-4 text-xl font-semibold text-white">For Pets</h3>
               <p className="mb-6 text-white/70 leading-relaxed">
-                Notice anxiety, stress, and behavior patterns your pet can't tell you about.
+                Notice anxiety, stress, and behavior patterns your pet can&rsquo;t tell you about.
               </p>
               <Link 
                 href="/pets"
