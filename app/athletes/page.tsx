@@ -195,7 +195,7 @@ export default function AthletesPage() {
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-white mb-2">Pattern recognition</h4>
-                <p className="text-white/70">"Your best performances happen when you sleep 8+ hours and do morning visualization"</p>
+                <p className="text-white/70">&ldquo;Your best performances happen when you sleep 8+ hours and do morning visualization&rdquo;</p>
               </div>
             </div>
             

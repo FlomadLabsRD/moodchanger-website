@@ -27,7 +27,7 @@ export default function AllergiesPage() {
               The Hidden Impact
             </h2>
             <p className="text-lg text-white/70 leading-relaxed">
-              Allergies don't just make you sneeze. They tank your mood, wreck your sleep, and kill your focus 
+              Allergies don&rsquo;t just make you sneeze. They tank your mood, wreck your sleep, and kill your focus 
               2-3 days before you even notice physical symptoms.
             </p>
           </div>
@@ -54,7 +54,7 @@ export default function AllergiesPage() {
               <div className="flex items-start gap-4">
                 <div className="w-2 h-2 rounded-full bg-[#FDE035] mt-3 flex-shrink-0"></div>
                 <p className="text-white/80 leading-relaxed">
-                  Shows you patterns like: "Your focus drops 30% on high oak pollen days when you sleep less than 7 hours"
+                  Shows you patterns like: &ldquo;Your focus drops 30% on high oak pollen days when you sleep less than 7 hours&rdquo;
                 </p>
               </div>
               <div className="flex items-start gap-4">
@@ -76,12 +76,12 @@ export default function AllergiesPage() {
               <div className="space-y-6">
                 <div className="border-b border-white/10 pb-6">
                   <h3 className="text-lg font-semibold text-white mb-2">Daily check-in</h3>
-                  <p className="text-white/70">"How are you feeling today?" (1-10 scale)</p>
+                  <p className="text-white/70">&ldquo;How are you feeling today?&rdquo; (1-10 scale)</p>
                 </div>
                 
                 <div className="border-b border-white/10 pb-6">
                   <h3 className="text-lg font-semibold text-white mb-2">Pattern insights</h3>
-                  <p className="text-white/70">"Your mood drops 2 days before pollen spikes"</p>
+                  <p className="text-white/70">&ldquo;Your mood drops 2 days before pollen spikes&rdquo;</p>
                 </div>
                 
                 <div className="border-b border-white/10 pb-6">
@@ -92,7 +92,7 @@ export default function AllergiesPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-2">Suggestions</h3>
                   <p className="text-white/70">
-                    "Try closing windows after 3pm" or "Your energy is higher with morning workouts during allergy season"
+                    &ldquo;Try closing windows after 3pm&rdquo; or &ldquo;Your energy is higher with morning workouts during allergy season&rdquo;
                   </p>
                 </div>
               </div>
@@ -106,7 +106,7 @@ export default function AllergiesPage() {
                 Not a Medical Device
               </h2>
               <p className="text-white/70 leading-relaxed">
-                MoodChanger helps you notice patterns. It doesn't diagnose or treat allergies. 
+                MoodChanger helps you notice patterns. It doesn&rsquo;t diagnose or treat allergies. 
                 Work with your doctor for medical care.
               </p>
             </div>
