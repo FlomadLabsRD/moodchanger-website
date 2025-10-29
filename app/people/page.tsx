@@ -27,7 +27,7 @@ export default function PeoplePage() {
               More Than Just Tracking
             </h2>
             <p className="mx-auto max-w-3xl text-lg text-white/70 leading-relaxed">
-              MoodChanger learns your patterns—mood, sleep, routine, environment—and shows you connections you'd never see alone.
+              MoodChanger learns your patterns—mood, sleep, routine, environment—and shows you connections you&rsquo;d never see alone.
             </p>
             <div className="mt-6 text-[#FDE035] font-medium">
               Daily check-ins + passive signals → Insights you can act on.
@@ -40,7 +40,7 @@ export default function PeoplePage() {
               For Specific Challenges
             </h3>
             <p className="mb-12 text-white/70 text-center max-w-2xl mx-auto">
-              We've built focused support for:
+              We&rsquo;ve built focused support for:
             </p>
             
             <div className="grid md:grid-cols-3 gap-8">
@@ -125,7 +125,7 @@ export default function PeoplePage() {
             </h3>
             <div className="mx-auto max-w-4xl rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/2 p-8">
               <p className="mb-6 text-white/70 leading-relaxed">
-                Even if you don't identify with those specific challenges, MoodChanger helps you:
+                Even if you don&rsquo;t identify with those specific challenges, MoodChanger helps you:
               </p>
               <div className="grid md:grid-cols-2 gap-6 text-left">
                 <div className="flex items-start gap-3">
@@ -184,7 +184,7 @@ export default function PeoplePage() {
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-white mb-2">Pattern insights</h4>
-                <p className="text-white/70">"Your energy is 40% higher on days you walk before noon"</p>
+                <p className="text-white/70">&ldquo;Your energy is 40% higher on days you walk before noon&rdquo;</p>
               </div>
             </div>
             

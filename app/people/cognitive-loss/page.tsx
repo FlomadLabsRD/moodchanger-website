@@ -51,7 +51,7 @@ export default function CognitiveLossPage() {
                 <div className="w-3 h-3 rounded-full bg-[#FDE035] mt-2 flex-shrink-0"></div>
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-2">Context cards</h3>
-                  <p className="text-white/70">"Today is Tuesday. You have lunch with Sarah at noon."</p>
+                  <p className="text-white/70">&ldquo;Today is Tuesday. You have lunch with Sarah at noon.&rdquo;</p>
                 </div>
               </div>
               
@@ -59,7 +59,7 @@ export default function CognitiveLossPage() {
                 <div className="w-3 h-3 rounded-full bg-[#FDE035] mt-2 flex-shrink-0"></div>
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-2">Mood check-ins</h3>
-                  <p className="text-white/70">"How are you feeling?" with simple responses</p>
+                  <p className="text-white/70">&ldquo;How are you feeling?&rdquo; with simple responses</p>
                 </div>
               </div>
               
@@ -88,7 +88,7 @@ export default function CognitiveLossPage() {
                 This Is Not Medical Monitoring
               </h2>
               <p className="text-white/70 leading-relaxed">
-                MoodChanger is a daily companion tool, not a medical device. It doesn't diagnose, treat, or monitor 
+                MoodChanger is a daily companion tool, not a medical device. It doesn&rsquo;t diagnose, treat, or monitor 
                 cognitive conditions. Always work with healthcare professionals for medical care.
               </p>
             </div>
@@ -104,7 +104,7 @@ export default function CognitiveLossPage() {
               <div className="flex items-start gap-4">
                 <div className="w-2 h-2 rounded-full bg-[#FDE035] mt-3 flex-shrink-0"></div>
                 <p className="text-white/80 leading-relaxed">
-                  You control what's shared and with whom
+                  You control what&rsquo;s shared and with whom
                 </p>
               </div>
               <div className="flex items-start gap-4">
@@ -140,7 +140,7 @@ export default function CognitiveLossPage() {
             <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/2 p-6">
               <p className="text-white/60 text-sm leading-relaxed">
                 <strong>Disclaimer:</strong> MoodChanger is not a substitute for medical advice, diagnosis, or treatment. 
-                If you're experiencing cognitive changes, consult a healthcare provider.
+                If you&rsquo;re experiencing cognitive changes, consult a healthcare provider.
               </p>
             </div>
           </div>
