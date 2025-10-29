@@ -69,7 +69,7 @@ export default function AllergiesPage() {
           {/* What You'll See */}
           <div className="mb-16">
             <h2 className="mb-8 text-2xl font-semibold text-white lg:text-3xl">
-              What You'll See
+              What You&rsquo;ll See
             </h2>
             
             <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/2 p-8">
