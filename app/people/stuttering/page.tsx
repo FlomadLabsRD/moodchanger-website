@@ -75,7 +75,7 @@ export default function StutteringPage() {
                 <div className="w-3 h-3 rounded-full bg-[#FDE035] mt-2 flex-shrink-0"></div>
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-2">Notice patterns</h3>
-                  <p className="text-white/70">"Your fluency is 40% better on days you sleep 8+ hours"</p>
+                  <p className="text-white/70">&ldquo;Your fluency is 40% better on days you sleep 8+ hours&rdquo;</p>
                 </div>
               </div>
             </div>
@@ -88,7 +88,7 @@ export default function StutteringPage() {
                 Works Alongside Professional Support
               </h2>
               <p className="text-white/70 leading-relaxed">
-                MoodChanger is not speech therapy. It's a personal tool that works with your existing care plan.
+                MoodChanger is not speech therapy. It&rsquo;s a personal tool that works with your existing care plan.
               </p>
             </div>
           </div>
