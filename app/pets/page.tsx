@@ -13,7 +13,7 @@ export default function PetsPage() {
             MoodChanger for Pets
           </h1>
           <p className="mx-auto max-w-2xl text-lg leading-relaxed text-white/80 lg:text-xl">
-            Notice the patterns your pet can't tell you about. Understand their stress, comfort, and happiness signals.
+            Notice the patterns your pet can&rsquo;t tell you about. Understand their stress, comfort, and happiness signals.
           </p>
         </div>
       </section>
@@ -27,7 +27,7 @@ export default function PetsPage() {
               Beyond What You Can See
             </h2>
             <p className="mx-auto max-w-3xl text-lg text-white/70 leading-relaxed">
-              Your pet's behavior tells a story. MoodChanger helps you understand the patterns behind their anxiety, comfort, energy levels, and overall wellbeing.
+              Your pet&rsquo;s behavior tells a story. MoodChanger helps you understand the patterns behind their anxiety, comfort, energy levels, and overall wellbeing.
             </p>
             <div className="mt-6 text-[#FDE035] font-medium">
               Daily observations + Environmental tracking → Better pet care insights.
@@ -37,7 +37,7 @@ export default function PetsPage() {
           {/* Key Features */}
           <div className="mb-16">
             <h3 className="mb-8 text-2xl font-semibold text-white text-center">
-              Understanding Your Pet's World
+              Understanding Your Pet&rsquo;s World
             </h3>
             
             <div className="grid md:grid-cols-2 gap-8">
@@ -81,7 +81,7 @@ export default function PetsPage() {
                   <h4 className="text-xl font-semibold text-white mb-3">Environmental Factors</h4>
                 </div>
                 <p className="text-white/70 mb-6 leading-relaxed">
-                  Understand how weather, household changes, schedules, and visitors affect your pet's comfort.
+                  Understand how weather, household changes, schedules, and visitors affect your pet&rsquo;s comfort.
                 </p>
                 <div className="space-y-2 text-sm text-white/60">
                   <div className="flex items-center gap-2">
@@ -213,7 +213,7 @@ export default function PetsPage() {
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-white mb-2">Quick daily check-in</h4>
-                <p className="text-white/70">Note your pet's energy, appetite, social behavior, and any unusual signs (2 minutes)</p>
+                <p className="text-white/70">Note your pet&rsquo;s energy, appetite, social behavior, and any unusual signs (2 minutes)</p>
               </div>
             </div>
             
@@ -233,7 +233,7 @@ export default function PetsPage() {
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-white mb-2">Pattern recognition</h4>
-                <p className="text-white/70">"Your dog shows anxiety 2 days before thunderstorms" or "Your cat is most playful after morning sun"</p>
+                <p className="text-white/70">&ldquo;Your dog shows anxiety 2 days before thunderstorms&rdquo; or &ldquo;Your cat is most playful after morning sun&rdquo;</p>
               </div>
             </div>
             
@@ -254,9 +254,9 @@ export default function PetsPage() {
       <section className="py-16 border-t border-white/10">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <div className="mb-8">
-            <h3 className="mb-4 text-xl font-semibold text-white">Your Pet's Privacy Matters</h3>
+            <h3 className="mb-4 text-xl font-semibold text-white">Your Pet&rsquo;s Privacy Matters</h3>
             <p className="text-white/70 mb-6">
-              We believe your pet's behavioral data is as private as your own. Your observations and insights stay with you.
+              We believe your pet&rsquo;s behavioral data is as private as your own. Your observations and insights stay with you.
             </p>
             <p className="text-white/70">
               Optional: Share relevant patterns with your veterinarian to support better care.
