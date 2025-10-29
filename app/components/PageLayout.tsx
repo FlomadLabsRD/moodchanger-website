@@ -23,7 +23,7 @@ export default function PageLayout({ children }: PageLayoutProps) {
             <div className="flex items-center">
               <Image
                 src="/flomadlogo.svg"
-                alt="Flomad Labs"
+                alt="Flo Labs"
                 width={32}
                 height={32}
                 className="opacity-80 hover:opacity-100 transition-opacity brightness-0 invert"
@@ -50,7 +50,7 @@ export default function PageLayout({ children }: PageLayoutProps) {
               rel="noopener noreferrer"
               className="font-medium text-[#FDE035] transition-colors hover:text-[#FDE035]/80"
             >
-              Flomad Labs
+              Flo Labs
             </Link>
             <span>product</span>
           </div>
