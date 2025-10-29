@@ -8,8 +8,11 @@ export const metadata = {
   description: 'Transforming your mood, one insight at a time. A Flomad Labs product.',
   metadataBase: new URL('https://moodchanger.ai'),
   icons: {
-    icon: '/favicon.svg',
-    shortcut: '/favicon.svg',
+    icon: [
+      { url: '/favicon.ico', sizes: '16x16', type: 'image/x-icon' },
+      { url: '/favicon.svg', sizes: 'any', type: 'image/svg+xml' }
+    ],
+    shortcut: '/favicon.ico',
     apple: '/favicon.svg',
   },
   openGraph: {
@@ -39,6 +42,11 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
