@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'MOODCHANGER.AI',
-  description: 'Transforming your mood, one insight at a time. A Flomad Labs product.',
+  description: 'Transforming your mood, one insight at a time. A Flo Labs product.',
   metadataBase: new URL('https://moodchanger.ai'),
   icons: {
     icon: [
@@ -17,7 +17,7 @@ export const metadata = {
   },
   openGraph: {
     title: 'MOODCHANGER.AI',
-    description: 'Transforming your mood, one insight at a time. AI-powered mood transformation technology from Flomad Labs.',
+    description: 'Transforming your mood, one insight at a time. AI-powered mood transformation technology from Flo Labs.',
     url: 'https://moodchanger.ai',
     siteName: 'MOODCHANGER.AI',
     images: [
@@ -34,7 +34,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'MOODCHANGER.AI',
-    description: 'Transforming your mood, one insight at a time. AI-powered mood transformation technology from Flomad Labs.',
+    description: 'Transforming your mood, one insight at a time. AI-powered mood transformation technology from Flo Labs.',
     images: ['/og-pic.png'],
   },
 };

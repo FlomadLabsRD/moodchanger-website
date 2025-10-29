@@ -54,7 +54,7 @@ pnpm dev
 │   ├── globals.css       # Global styles
 │   └── favicon.ico       # Site favicon
 ├── public/               # Static assets
-│   ├── flomadlogo.svg   # Flomad Labs logo
+│   ├── flomadlogo.svg   # Flo Labs logo
 │   └── ...              # Other static files
 ├── package.json         # Project dependencies and scripts
 └── README.md           # Project documentation
@@ -77,7 +77,7 @@ pnpm dev
 
 ## 🏢 Company
 
-MoodChanger.AI is a product of [Flomad Labs](https://flomadlabs.com), a technology company focused on innovative AI solutions.
+MoodChanger.AI is a product of [Flo Labs](https://flomadlabs.com), a technology company focused on innovative AI solutions.
 
 ## 📄 License
 
