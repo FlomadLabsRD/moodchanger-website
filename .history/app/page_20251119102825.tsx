@@ -148,10 +148,10 @@ export default async function Page() {
       <section className="py-16 border-t border-white/10 bg-gradient-to-br from-[#FDE035]/5 via-transparent to-transparent">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="mb-6 text-3xl font-bold text-center text-white lg:text-4xl">
-            {solutionTitle}
+            The MoodChanger Solution
           </h2>
           <p className="mb-12 text-center text-white/70 max-w-3xl mx-auto text-lg">
-            {solutionSubtitle}
+            CAIPO and MoodChanger work together to provide intelligent, personalized support
           </p>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -222,80 +222,60 @@ export default async function Page() {
       <section className="py-16 border-t border-white/10">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="mb-12 text-3xl font-bold text-center text-white lg:text-4xl">
-            {howItWorksTitle}
+            How MoodChanger Works
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {useCases && useCases.length > 0 ? (
-              useCases.map((useCase) => (
-                <div key={useCase.id} className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/2 p-6 transition-all duration-300 hover:border-[#FDE035]/30 hover:shadow-lg hover:shadow-[#FDE035]/10">
-                  <h3 className="mb-4 text-xl font-semibold text-white">{useCase.attributes.title}</h3>
-                  <p className="mb-6 text-white/70 leading-relaxed">
-                    {useCase.attributes.description}
-                  </p>
-                  <Link 
-                    href={`/${useCase.attributes.slug}`}
-                    className="inline-flex items-center gap-2 text-[#FDE035] font-medium hover:text-[#FDE035]/80 transition-colors"
-                  >
-                    Explore
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
-                </div>
-              ))
-            ) : (
-              <>
-                {/* Fallback content */}
-                <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/2 p-6 transition-all duration-300 hover:border-[#FDE035]/30 hover:shadow-lg hover:shadow-[#FDE035]/10">
-                  <h3 className="mb-4 text-xl font-semibold text-white">For People</h3>
-                  <p className="mb-6 text-white/70 leading-relaxed">
-                    Understand patterns in mood, sleep, and daily life. Specialized support for allergies, stuttering, and cognitive changes.
-                  </p>
-                  <Link 
-                    href="/people"
-                    className="inline-flex items-center gap-2 text-[#FDE035] font-medium hover:text-[#FDE035]/80 transition-colors"
-                  >
-                    Explore
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
-                </div>
+            {/* People Card */}
+            <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/2 p-6 transition-all duration-300 hover:border-[#FDE035]/30 hover:shadow-lg hover:shadow-[#FDE035]/10">
+              <h3 className="mb-4 text-xl font-semibold text-white">For People</h3>
+              <p className="mb-6 text-white/70 leading-relaxed">
+                Understand patterns in mood, sleep, and daily life. Specialized support for allergies, stuttering, and cognitive changes.
+              </p>
+              <Link 
+                href="/people"
+                className="inline-flex items-center gap-2 text-[#FDE035] font-medium hover:text-[#FDE035]/80 transition-colors"
+              >
+                Explore
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
 
-                <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/2 p-6 transition-all duration-300 hover:border-[#FDE035]/30 hover:shadow-lg hover:shadow-[#FDE035]/10">
-                  <h3 className="mb-4 text-xl font-semibold text-white">For Athletes</h3>
-                  <p className="mb-6 text-white/70 leading-relaxed">
-                    Train your mind as precisely as your body. Pre-performance routines and recovery insights.
-                  </p>
-                  <Link 
-                    href="/athletes"
-                    className="inline-flex items-center gap-2 text-[#FDE035] font-medium hover:text-[#FDE035]/80 transition-colors"
-                  >
-                    Explore
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
-                </div>
+            {/* Athletes Card */}
+            <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/2 p-6 transition-all duration-300 hover:border-[#FDE035]/30 hover:shadow-lg hover:shadow-[#FDE035]/10">
+              <h3 className="mb-4 text-xl font-semibold text-white">For Athletes</h3>
+              <p className="mb-6 text-white/70 leading-relaxed">
+                Train your mind as precisely as your body. Pre-performance routines and recovery insights.
+              </p>
+              <Link 
+                href="/athletes"
+                className="inline-flex items-center gap-2 text-[#FDE035] font-medium hover:text-[#FDE035]/80 transition-colors"
+              >
+                Explore
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
 
-                <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/2 p-6 transition-all duration-300 hover:border-[#FDE035]/30 hover:shadow-lg hover:shadow-[#FDE035]/10">
-                  <h3 className="mb-4 text-xl font-semibold text-white">For Pets</h3>
-                  <p className="mb-6 text-white/70 leading-relaxed">
-                    Notice anxiety, stress, and behavior patterns your pet can&rsquo;t tell you about.
-                  </p>
-                  <Link 
-                    href="/pets"
-                    className="inline-flex items-center gap-2 text-[#FDE035] font-medium hover:text-[#FDE035]/80 transition-colors"
-                  >
-                    Explore
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
-                </div>
-              </>
-            )}
+            {/* Pets Card */}
+            <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/2 p-6 transition-all duration-300 hover:border-[#FDE035]/30 hover:shadow-lg hover:shadow-[#FDE035]/10">
+              <h3 className="mb-4 text-xl font-semibold text-white">For Pets</h3>
+              <p className="mb-6 text-white/70 leading-relaxed">
+                Notice anxiety, stress, and behavior patterns your pet can&rsquo;t tell you about.
+              </p>
+              <Link 
+                href="/pets"
+                className="inline-flex items-center gap-2 text-[#FDE035] font-medium hover:text-[#FDE035]/80 transition-colors"
+              >
+                Explore
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

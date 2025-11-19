@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_page",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page",
+    "description": "Content for the home page"
+  },
+  "options": {
+    "draftAndPublish": true,
+    "comment": ""
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_title": {
+      "type": "string",
+      "required": true
+    },
+    "hero_subtitle": {
+      "type": "text",
+      "required": true
+    },
+    "canva_embed_url": {
+      "type": "string"
+    },
+    "challenge_title": {
+      "type": "string",
+      "default": "The Challenge"
+    },
+    "challenge_subtitle": {
+      "type": "text"
+    },
+    "solution_title": {
+      "type": "string",
+      "default": "The MoodChanger Solution"
+    },
+    "solution_subtitle": {
+      "type": "text"
+    },
+    "how_it_works_title": {
+      "type": "string",
+      "default": "How MoodChanger Works"
+    }
+  }
+}
