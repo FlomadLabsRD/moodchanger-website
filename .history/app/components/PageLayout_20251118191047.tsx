@@ -18,8 +18,8 @@ export default function PageLayout({ children }: PageLayoutProps) {
               <Image
                 src="/flomadlogo.svg"
                 alt="MoodChanger"
-                width={52}
-                height={52}
+                width={48}
+                height={48}
                 className="opacity-90 group-hover:opacity-100 transition-opacity"
               />
             </div>

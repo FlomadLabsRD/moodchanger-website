@@ -12,7 +12,7 @@ export default function PageLayout({ children }: PageLayoutProps) {
       {/* Header */}
       <header className="sticky top-0 z-[9999] border-b border-white/10 bg-[#0d2430]/95 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-4">
-          <Link href="/" className="flex items-center gap-4 group">
+          <Link href="/" className="flex items-center group" aria-label="MoodChanger Home">
             {/* Logo Icon */}
             <div className="transition-transform duration-300 group-hover:scale-110">
               <Image
@@ -22,12 +22,6 @@ export default function PageLayout({ children }: PageLayoutProps) {
                 height={52}
                 className="opacity-90 group-hover:opacity-100 transition-opacity"
               />
-            </div>
-            {/* Logo Text */}
-            <div className="flex items-baseline font-bold tracking-[0.05em]">
-              <span className="text-2xl text-white">Mood</span>
-              <span className="text-2xl text-[#FDE035]">Changer</span>
-              <span className="text-2xl text-white">.ai</span>
             </div>
           </Link>
           
