@@ -18,16 +18,16 @@ export default function PageLayout({ children }: PageLayoutProps) {
               <Image
                 src="/flomadlogo.svg"
                 alt="MoodChanger"
-                width={52}
-                height={52}
+                width={48}
+                height={48}
                 className="opacity-90 group-hover:opacity-100 transition-opacity"
               />
             </div>
             {/* Logo Text */}
-            <div className="flex items-baseline font-bold tracking-[0.05em]">
-              <span className="text-2xl text-white">Mood</span>
-              <span className="text-2xl text-[#FDE035]">Changer</span>
-              <span className="text-2xl text-white">.ai</span>
+            <div className="flex items-baseline font-bold tracking-[0.2em]">
+              <span className="text-2xl text-white">MOOD</span>
+              <span className="text-2xl text-[#FDE035]">CHANGER</span>
+              <span className="text-2xl text-white">.AI</span>
             </div>
           </Link>
           
