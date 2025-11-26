@@ -1,15 +1,16 @@
 import Link from "next/link";
 import PageLayout from "./components/PageLayout";
-import { getHomePage, getUseCases, type StrapiData, type UseCaseData } from "@/lib/strapi";
+import { getHomePage, getUseCases, type UseCaseData } from "@/lib/strapi";
 
 export default async function Page() {
   // Fetch content from Strapi
   const homeData = await getHomePage();
-  const useCases = await getUseCases() as StrapiData<UseCaseData>[] | [];
+  const useCases = await getUseCases() as UseCaseData[] | [];
 
   // Use Strapi data if available, otherwise fallback
-  const heroTitle = homeData?.attributes?.title || "Transforming your mood, one insight at a time";
-  const heroSubtitle = homeData?.attributes?.description || "A single app that connects multiple AI technologies into one place. Powered by CAIPO, your Chief Artificial Intelligence Productivity Officer—your personal AI assistant that boosts productivity, wellness, and lifestyle.";
+  // Strapi v5 returns data flat (not nested in attributes)
+  const heroTitle = homeData?.title || "Transforming your mood, one insight at a time";
+  const heroSubtitle = homeData?.description || "A single app that connects multiple AI technologies into one place. Powered by CAIPO, your Chief Artificial Intelligence Productivity Officer—your personal AI assistant that boosts productivity, wellness, and lifestyle.";
   const canvaEmbed = "https://www.canva.com/design/DAG2FPh_Pnw/kbyAD8FOrpxqfTeDhJgYCQ/view?embed";
   const challengeTitle = "The Challenge";
   const challengeSubtitle = "Managing your health and wellness shouldn't feel like a full-time job";
@@ -227,14 +228,14 @@ export default async function Page() {
           
           <div className="grid md:grid-cols-3 gap-8">
             {useCases && useCases.length > 0 ? (
-              useCases.map((useCase: StrapiData<UseCaseData>) => (
+              useCases.map((useCase: UseCaseData) => (
                 <div key={useCase.id} className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/2 p-6 transition-all duration-300 hover:border-[#FDE035]/30 hover:shadow-lg hover:shadow-[#FDE035]/10">
-                  <h3 className="mb-4 text-xl font-semibold text-white">{useCase.attributes.title}</h3>
+                  <h3 className="mb-4 text-xl font-semibold text-white">{useCase.title}</h3>
                   <p className="mb-6 text-white/70 leading-relaxed">
-                    {useCase.attributes.description}
+                    {useCase.description}
                   </p>
                   <Link 
-                    href={`/${useCase.attributes.slug}`}
+                    href={`/${useCase.slug}`}
                     className="inline-flex items-center gap-2 text-[#FDE035] font-medium hover:text-[#FDE035]/80 transition-colors"
                   >
                     Explore
