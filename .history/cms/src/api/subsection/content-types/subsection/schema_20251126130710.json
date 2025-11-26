@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subsections",
+  "info": {
+    "singularName": "subsection",
+    "pluralName": "subsections",
+    "displayName": "Subsection",
+    "description": "Specialized content areas like Allergies, Stuttering, Cognitive Loss"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "section": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::section.section",
+      "inversedBy": "subsections"
+    }
+  }
+}

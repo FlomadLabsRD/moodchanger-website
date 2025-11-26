@@ -68,15 +68,10 @@ async function fetchAPI(
  */
 export async function getHomePage() {
   try {
-    const data = await fetchAPI('/pages', {}, {
-      filters: {
-        slug: {
-          $eq: 'home',
-        },
-      },
+    const data = await fetchAPI('/home-page', {}, {
       populate: '*',
     });
-    return data.data?.[0];
+    return data.data;
   } catch (error) {
     console.error('Error fetching home page:', error);
     return null;
@@ -84,13 +79,13 @@ export async function getHomePage() {
 }
 
 /**
- * Fetch all use cases (People, Athletes, Pets) - now using sections
+ * Fetch all use cases (People, Athletes, Pets)
  */
 export async function getUseCases() {
   try {
-    const data = await fetchAPI('/sections', {}, {
-      populate: 'subsections',
-      sort: 'title:asc',
+    const data = await fetchAPI('/use-cases', {}, {
+      populate: '*',
+      sort: 'name:asc',
     });
     return data.data;
   } catch (error) {
@@ -100,17 +95,17 @@ export async function getUseCases() {
 }
 
 /**
- * Fetch a single use case by slug (section)
+ * Fetch a single use case by slug
  */
 export async function getUseCaseBySlug(slug: string) {
   try {
-    const data = await fetchAPI('/sections', {}, {
+    const data = await fetchAPI('/use-cases', {}, {
       filters: {
         slug: {
           $eq: slug,
         },
       },
-      populate: 'subsections',
+      populate: ['features', 'sub_categories'],
     });
     return data.data?.[0] || null;
   } catch (error) {
@@ -120,11 +115,11 @@ export async function getUseCaseBySlug(slug: string) {
 }
 
 /**
- * Fetch a single sub-category by slug (subsection)
+ * Fetch a single sub-category by slug
  */
 export async function getSubCategoryBySlug(slug: string) {
   try {
-    const data = await fetchAPI('/subsections', {}, {
+    const data = await fetchAPI('/sub-categories', {}, {
       filters: {
         slug: {
           $eq: slug,
@@ -215,21 +210,22 @@ export interface FeatureData {
 }
 
 export interface UseCaseData {
-  title: string;
+  name: string;
   slug: string;
+  title: string;
   description: string;
-  content?: string;
-  subsections?: {
-    data: StrapiData<SubCategoryData>[];
-  };
+  hero_title?: string;
+  hero_description?: string;
+  icon: string;
+  features?: StrapiData<FeatureData>[];
+  sub_categories?: StrapiData<SubCategoryData>[];
 }
 
 export interface SubCategoryData {
-  title: string;
+  name: string;
   slug: string;
+  title: string;
   description?: string;
+  icon?: string;
   content?: string;
-  section?: {
-    data: StrapiData<UseCaseData>;
-  };
 }

@@ -7,15 +7,15 @@ export default async function Page() {
   const homeData = await getHomePage();
   const useCases = await getUseCases() as StrapiData<UseCaseData>[] | [];
 
-  // Use Strapi data if available, otherwise fallback
-  const heroTitle = homeData?.attributes?.title || "Transforming your mood, one insight at a time";
-  const heroSubtitle = homeData?.attributes?.description || "A single app that connects multiple AI technologies into one place. Powered by CAIPO, your Chief Artificial Intelligence Productivity Officer—your personal AI assistant that boosts productivity, wellness, and lifestyle.";
-  const canvaEmbed = "https://www.canva.com/design/DAG2FPh_Pnw/kbyAD8FOrpxqfTeDhJgYCQ/view?embed";
-  const challengeTitle = "The Challenge";
-  const challengeSubtitle = "Managing your health and wellness shouldn't feel like a full-time job";
-  const solutionTitle = "The MoodChanger Solution";
-  const solutionSubtitle = "CAIPO and MoodChanger work together to provide intelligent, personalized support";
-  const howItWorksTitle = "How MoodChanger Works";
+  // Fallback values if Strapi is not available
+  const heroTitle = homeData?.attributes?.hero_title || "Transforming your mood, one insight at a time";
+  const heroSubtitle = homeData?.attributes?.hero_subtitle || "A single app that connects multiple AI technologies into one place. Powered by CAIPO, your Chief Artificial Intelligence Productivity Officer—your personal AI assistant that boosts productivity, wellness, and lifestyle.";
+  const canvaEmbed = homeData?.attributes?.canva_embed_url || "https://www.canva.com/design/DAG2FPh_Pnw/kbyAD8FOrpxqfTeDhJgYCQ/view?embed";
+  const challengeTitle = homeData?.attributes?.challenge_title || "The Challenge";
+  const challengeSubtitle = homeData?.attributes?.challenge_subtitle || "Managing your health and wellness shouldn't feel like a full-time job";
+  const solutionTitle = homeData?.attributes?.solution_title || "The MoodChanger Solution";
+  const solutionSubtitle = homeData?.attributes?.solution_subtitle || "CAIPO and MoodChanger work together to provide intelligent, personalized support";
+  const howItWorksTitle = homeData?.attributes?.how_it_works_title || "How MoodChanger Works";
 
   return (
     <PageLayout>

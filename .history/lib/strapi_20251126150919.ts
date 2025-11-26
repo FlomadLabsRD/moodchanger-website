@@ -215,21 +215,22 @@ export interface FeatureData {
 }
 
 export interface UseCaseData {
-  title: string;
+  name: string;
   slug: string;
+  title: string;
   description: string;
-  content?: string;
-  subsections?: {
-    data: StrapiData<SubCategoryData>[];
-  };
+  hero_title?: string;
+  hero_description?: string;
+  icon: string;
+  features?: StrapiData<FeatureData>[];
+  sub_categories?: StrapiData<SubCategoryData>[];
 }
 
 export interface SubCategoryData {
-  title: string;
+  name: string;
   slug: string;
+  title: string;
   description?: string;
+  icon?: string;
   content?: string;
-  section?: {
-    data: StrapiData<UseCaseData>;
-  };
 }
