@@ -68,7 +68,7 @@ export async function getHomePage() {
 export async function getUseCases() {
   try {
     const data = await fetchAPI('/use-cases', {}, {
-      populate: ['features', 'sub_categories'],
+      populate: '*',
       sort: 'name:asc',
     });
     return data.data;
