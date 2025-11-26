@@ -14,7 +14,7 @@ const STRAPI_API_TOKEN = process.env.STRAPI_API_TOKEN;
 async function fetchAPI(
   path: string,
   options: RequestInit = {},
-  urlParamsObject: Record<string, string> = {}
+  urlParamsObject: Record<string, any> = {}
 ) {
   // Merge default and user options
   const mergedOptions: RequestInit = {
@@ -25,8 +25,21 @@ async function fetchAPI(
     ...options,
   };
 
-  // Build request URL
-  const queryString = new URLSearchParams(urlParamsObject).toString();
+  // Build request URL with proper query parameter encoding
+  let queryString = '';
+  if (Object.keys(urlParamsObject).length > 0) {
+    // Convert nested objects to query string format
+    const params = new URLSearchParams();
+    Object.entries(urlParamsObject).forEach(([key, value]) => {
+      if (typeof value === 'object' && value !== null) {
+        params.append(key, JSON.stringify(value));
+      } else {
+        params.append(key, String(value));
+      }
+    });
+    queryString = params.toString();
+  }
+  
   const requestUrl = queryString 
     ? `${STRAPI_API_URL}${path}?${queryString}`
     : `${STRAPI_API_URL}${path}`;
