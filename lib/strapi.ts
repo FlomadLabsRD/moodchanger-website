@@ -8,13 +8,16 @@
 const STRAPI_API_URL = process.env.NEXT_PUBLIC_STRAPI_API_URL || 'http://localhost:1337/api';
 const STRAPI_API_TOKEN = process.env.STRAPI_API_TOKEN;
 
+// Type for Strapi query parameters
+type StrapiQueryParams = Record<string, string | number | boolean | object | Array<string | number | boolean | object>>;
+
 /**
  * Generic fetch function for Strapi API
  */
 async function fetchAPI(
   path: string,
   options: RequestInit = {},
-  urlParamsObject: Record<string, any> = {}
+  urlParamsObject: StrapiQueryParams = {}
 ) {
   // Merge default and user options
   const mergedOptions: RequestInit = {
