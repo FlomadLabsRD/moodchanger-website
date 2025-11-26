@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_content_features",
+  "info": {
+    "displayName": "Feature",
+    "description": "Reusable feature blocks"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}
