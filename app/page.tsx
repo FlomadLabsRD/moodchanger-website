@@ -1,11 +1,11 @@
 import Link from "next/link";
 import PageLayout from "./components/PageLayout";
-import { getHomePage, getUseCases } from "@/lib/strapi";
+import { getHomePage, getUseCases, type StrapiData, type UseCaseData } from "@/lib/strapi";
 
 export default async function Page() {
   // Fetch content from Strapi
   const homeData = await getHomePage();
-  const useCases = await getUseCases();
+  const useCases = await getUseCases() as StrapiData<UseCaseData>[] | [];
 
   // Fallback values if Strapi is not available
   const heroTitle = homeData?.attributes?.hero_title || "Transforming your mood, one insight at a time";
@@ -227,7 +227,7 @@ export default async function Page() {
           
           <div className="grid md:grid-cols-3 gap-8">
             {useCases && useCases.length > 0 ? (
-              useCases.map((useCase) => (
+              useCases.map((useCase: StrapiData<UseCaseData>) => (
                 <div key={useCase.id} className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/2 p-6 transition-all duration-300 hover:border-[#FDE035]/30 hover:shadow-lg hover:shadow-[#FDE035]/10">
                   <h3 className="mb-4 text-xl font-semibold text-white">{useCase.attributes.title}</h3>
                   <p className="mb-6 text-white/70 leading-relaxed">
