@@ -14,7 +14,7 @@ const STRAPI_API_TOKEN = process.env.STRAPI_API_TOKEN;
 async function fetchAPI(
   path: string,
   options: RequestInit = {},
-  urlParamsObject: Record<string, string | number | boolean> = {}
+  urlParamsObject: Record<string, string> = {}
 ) {
   // Merge default and user options
   const mergedOptions: RequestInit = {
