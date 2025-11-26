@@ -68,17 +68,11 @@ async function fetchAPI(
  */
 export async function getHomePage() {
   try {
-    const data = await fetchAPI('/pages', {}, {
-      filters: {
-        slug: {
-          $eq: 'home',
-        },
-      },
-      populate: '*',
-    });
+    const data = await fetchAPI('/pages?filters[slug][$eq]=home&populate=*');
     return data.data?.[0];
   } catch (error) {
     console.error('Error fetching home page:', error);
+    // Return null gracefully - fallback content will be used
     return null;
   }
 }
@@ -88,13 +82,11 @@ export async function getHomePage() {
  */
 export async function getUseCases() {
   try {
-    const data = await fetchAPI('/sections', {}, {
-      populate: 'subsections',
-      sort: 'title:asc',
-    });
-    return data.data;
+    const data = await fetchAPI('/sections?populate=subsections&sort=title:asc');
+    return data.data || [];
   } catch (error) {
     console.error('Error fetching use cases:', error);
+    // Return empty array - fallback content will be used
     return [];
   }
 }
@@ -104,17 +96,11 @@ export async function getUseCases() {
  */
 export async function getUseCaseBySlug(slug: string) {
   try {
-    const data = await fetchAPI('/sections', {}, {
-      filters: {
-        slug: {
-          $eq: slug,
-        },
-      },
-      populate: 'subsections',
-    });
+    const data = await fetchAPI(`/sections?filters[slug][$eq]=${slug}&populate=subsections`);
     return data.data?.[0] || null;
   } catch (error) {
     console.error(`Error fetching use case ${slug}:`, error);
+    // Return null gracefully
     return null;
   }
 }
@@ -124,17 +110,11 @@ export async function getUseCaseBySlug(slug: string) {
  */
 export async function getSubCategoryBySlug(slug: string) {
   try {
-    const data = await fetchAPI('/subsections', {}, {
-      filters: {
-        slug: {
-          $eq: slug,
-        },
-      },
-      populate: '*',
-    });
+    const data = await fetchAPI(`/subsections?filters[slug][$eq]=${slug}&populate=*`);
     return data.data?.[0] || null;
   } catch (error) {
     console.error(`Error fetching sub-category ${slug}:`, error);
+    // Return null gracefully
     return null;
   }
 }
