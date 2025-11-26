@@ -219,9 +219,7 @@ export interface UseCaseData {
   slug: string;
   description: string;
   content?: string;
-  subsections?: {
-    data: StrapiData<SubCategoryData>[];
-  };
+  subsections?: SubCategoryData[];
 }
 
 export interface SubCategoryData {
@@ -229,7 +227,4 @@ export interface SubCategoryData {
   slug: string;
   description?: string;
   content?: string;
-  section?: {
-    data: StrapiData<UseCaseData>;
-  };
 }
