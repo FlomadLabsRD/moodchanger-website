@@ -51,7 +51,7 @@ export default function CognitiveLossPage() {
                 <div className="w-3 h-3 rounded-full bg-[#FDE035] mt-2 flex-shrink-0"></div>
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-2">Context cards</h3>
-                  <p className="text-white/70">&ldquo;Today is Tuesday. You have lunch with Sarah at noon.&rdquo;</p>
+                  <p className="text-white/70">Today is Tuesday. You have lunch with Sarah at noon.</p>
                 </div>
               </div>
               
@@ -59,7 +59,7 @@ export default function CognitiveLossPage() {
                 <div className="w-3 h-3 rounded-full bg-[#FDE035] mt-2 flex-shrink-0"></div>
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-2">Mood check-ins</h3>
-                  <p className="text-white/70">&ldquo;How are you feeling?&rdquo; with simple responses</p>
+                  <p className="text-white/70">How are you feeling? with simple responses</p>
                 </div>
               </div>
               
@@ -119,13 +119,6 @@ export default function CognitiveLossPage() {
                   Cancel or delete anytime
                 </p>
               </div>
-            </div>
-          </div>
-
-          {/* CTA */}
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-3 rounded-full bg-[#FDE035]/50 px-8 py-4 text-lg font-semibold text-[#0d2430]/70 cursor-not-allowed">
-              Coming Soon
             </div>
           </div>
 

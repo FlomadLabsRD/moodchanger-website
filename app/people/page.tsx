@@ -1,5 +1,6 @@
 import Link from "next/link";
 import PageLayout from "../components/PageLayout";
+import CaipoText from "../components/CaipoText";
 
 export default function PeoplePage() {
   return (
@@ -13,24 +14,34 @@ export default function PeoplePage() {
             MoodChanger for People
           </h1>
           <p className="mx-auto max-w-2xl text-lg leading-relaxed text-white/80 lg:text-xl">
-            Your 24/7 AI support system with personalized insights from real-time and historical data. Understand your patterns, manage stress, and prevent chronic disease with proactive health tracking.
+          Life is easier when you understand what affects how you feel. 
+          <br />
+          MoodChanger gives you 24/7 AI support with real-time 
+          <br />
+          and historical insights so you can track patterns, reduce perceived stress,
+          <br />
+          and build healthier habits before small issues escalate.
           </p>
         </div>
       </section>
 
       {/* Main Content */}
       <section className="py-16">
-        <div className="mx-auto max-w-6xl px-6">
+        <div className="mx-auto max-w-screen-2xl px-6">
           {/* Description */}
           <div className="mb-16 text-center">
             <h2 className="mb-6 text-2xl font-semibold text-white lg:text-3xl">
               Your Virtual Coach & Companion
             </h2>
             <p className="mx-auto max-w-3xl text-lg text-white/70 leading-relaxed">
-              CAIPO acts as your personal AI assistant, analyzing data from wearables to give you personalized insights, proactive nudges, and celebrate your milestones—all while managing stress and supporting chronic disease prevention.
+              <CaipoText text="CAIPO" /> is your personal AI partner, always there to guide you. 
+          <br />
+              It turns wearable data into clear, personalized insights, gentle nudges, 
+          <br />
+              and milestone support so you feel calmer, more in control, and supported every day.
             </p>
             <div className="mt-6 text-[#FDE035] font-medium">
-              Real-time data + AI insights → Actionable wellness recommendations
+              Real-time data + AI support → clearer patterns, calmer days, healthier outcomes.
             </div>
           </div>
 
@@ -45,7 +56,7 @@ export default function PeoplePage() {
             
             <div className="grid md:grid-cols-3 gap-8">
               {/* Allergies Card */}
-              <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/2 p-8 transition-all duration-300 hover:border-[#FDE035]/30 hover:shadow-lg hover:shadow-[#FDE035]/10">
+              <div className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/2 p-8 transition-all duration-300 hover:border-[#FDE035]/30 hover:shadow-lg hover:shadow-[#FDE035]/10">
                 <div className="mb-4">
                   <div className="w-12 h-12 rounded-full bg-[#FDE035]/20 flex items-center justify-center mb-4">
                     <svg className="w-6 h-6 text-[#FDE035]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -55,11 +66,14 @@ export default function PeoplePage() {
                   <h4 className="text-xl font-semibold text-white mb-3">Allergies</h4>
                 </div>
                 <p className="text-white/70 mb-6 leading-relaxed">
-                  Track how pollen, weather, and sleep affect your mood and focus—not just symptoms.
+                  Feel more in control of your day.
+                  Discover how pollen, sleep, 
+                  and weather shape your mood and energy, 
+                  and help you make better choices around it .
                 </p>
                 <Link 
                   href="/people/allergies"
-                  className="inline-flex items-center gap-2 text-[#FDE035] font-medium hover:text-[#FDE035]/80 transition-colors"
+                  className="mt-auto inline-flex items-center gap-2 text-[#FDE035] font-medium hover:text-[#FDE035]/80 transition-colors"
                 >
                   Learn more
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -69,7 +83,7 @@ export default function PeoplePage() {
               </div>
 
               {/* Stuttering Card */}
-              <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/2 p-8 transition-all duration-300 hover:border-[#FDE035]/30 hover:shadow-lg hover:shadow-[#FDE035]/10">
+              <div className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/2 p-8 transition-all duration-300 hover:border-[#FDE035]/30 hover:shadow-lg hover:shadow-[#FDE035]/10">
                 <div className="mb-4">
                   <div className="w-12 h-12 rounded-full bg-[#FDE035]/20 flex items-center justify-center mb-4">
                     <svg className="w-6 h-6 text-[#FDE035]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -79,11 +93,11 @@ export default function PeoplePage() {
                   <h4 className="text-xl font-semibold text-white mb-3">Stuttering</h4>
                 </div>
                 <p className="text-white/70 mb-6 leading-relaxed">
-                  Practice techniques, log contexts, and understand what affects your fluency—privately.
+                  A safe, private space to grow your voice. Build confidence with guided practice, real-life context tracking, and insights that help you speak with more ease.
                 </p>
                 <Link 
                   href="/people/stuttering"
-                  className="inline-flex items-center gap-2 text-[#FDE035] font-medium hover:text-[#FDE035]/80 transition-colors"
+                  className="mt-auto inline-flex items-center gap-2 text-[#FDE035] font-medium hover:text-[#FDE035]/80 transition-colors"
                 >
                   Learn more
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -93,7 +107,7 @@ export default function PeoplePage() {
               </div>
 
               {/* Cognitive Support Card */}
-              <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/2 p-8 transition-all duration-300 hover:border-[#FDE035]/30 hover:shadow-lg hover:shadow-[#FDE035]/10">
+              <div className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/2 p-8 transition-all duration-300 hover:border-[#FDE035]/30 hover:shadow-lg hover:shadow-[#FDE035]/10">
                 <div className="mb-4">
                   <div className="w-12 h-12 rounded-full bg-[#FDE035]/20 flex items-center justify-center mb-4">
                     <svg className="w-6 h-6 text-[#FDE035]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -103,11 +117,11 @@ export default function PeoplePage() {
                   <h4 className="text-xl font-semibold text-white mb-3">Cognitive Support</h4>
                 </div>
                 <p className="text-white/70 mb-6 leading-relaxed">
-                  Gentle daily structure and reminders that support independence and peace of mind.
+                  Bring more calm and structure to everyday life. Gentle reminders and routines support independence, reduce cognitive load, and help you feel steady and capable.
                 </p>
                 <Link 
                   href="/people/cognitive-loss"
-                  className="inline-flex items-center gap-2 text-[#FDE035] font-medium hover:text-[#FDE035]/80 transition-colors"
+                  className="mt-auto inline-flex items-center gap-2 text-[#FDE035] font-medium hover:text-[#FDE035]/80 transition-colors"
                 >
                   Learn more
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -130,7 +144,7 @@ export default function PeoplePage() {
               <div className="grid md:grid-cols-2 gap-6 text-left">
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-[#FDE035] mt-2 flex-shrink-0"></div>
-                  <span className="text-white/80">Notice patterns between mood and sleep, exercise, social time</span>
+                  <span className="text-white/80">Notice patterns between mood, sleep, <br></br> and physical activity</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-[#FDE035] mt-2 flex-shrink-0"></div>
@@ -138,7 +152,7 @@ export default function PeoplePage() {
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-[#FDE035] mt-2 flex-shrink-0"></div>
-                  <span className="text-white/80">Make small changes that actually improve how you feel</span>
+                  <span className="text-white/80">Make small changes that actually improve how you feel, think and adapt</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-[#FDE035] mt-2 flex-shrink-0"></div>
@@ -159,7 +173,7 @@ export default function PeoplePage() {
           
           <div className="space-y-8">
             <div className="flex items-start gap-6">
-              <div className="w-8 h-8 rounded-full bg-[#FDE035] flex items-center justify-center text-[#2aa68a] font-semibold flex-shrink-0">
+              <div className="w-8 h-8 rounded-full bg-[#FDE035] flex items-center justify-center text-black font-semibold flex-shrink-0">
                 1
               </div>
               <div>
@@ -169,7 +183,7 @@ export default function PeoplePage() {
             </div>
             
             <div className="flex items-start gap-6">
-              <div className="w-8 h-8 rounded-full bg-[#FDE035] flex items-center justify-center text-[#2aa68a] font-semibold flex-shrink-0">
+              <div className="w-8 h-8 rounded-full bg-[#FDE035] flex items-center justify-center text-black font-semibold flex-shrink-0">
                 2
               </div>
               <div>
@@ -179,7 +193,7 @@ export default function PeoplePage() {
             </div>
             
             <div className="flex items-start gap-6">
-              <div className="w-8 h-8 rounded-full bg-[#FDE035] flex items-center justify-center text-[#2aa68a] font-semibold flex-shrink-0">
+              <div className="w-8 h-8 rounded-full bg-[#FDE035] flex items-center justify-center text-black font-semibold flex-shrink-0">
                 3
               </div>
               <div>
@@ -189,7 +203,7 @@ export default function PeoplePage() {
             </div>
             
             <div className="flex items-start gap-6">
-              <div className="w-8 h-8 rounded-full bg-[#FDE035] flex items-center justify-center text-[#2aa68a] font-semibold flex-shrink-0">
+              <div className="w-8 h-8 rounded-full bg-[#FDE035] flex items-center justify-center text-black font-semibold flex-shrink-0">
                 4
               </div>
               <div>
@@ -207,12 +221,8 @@ export default function PeoplePage() {
           <div className="mb-8">
             <h3 className="mb-4 text-xl font-semibold text-white">Privacy First</h3>
             <p className="text-white/70">
-              Your data is yours. Never sold, never used for ads. Delete anytime.
+              Your data stays private and is only shared with your permission.
             </p>
-          </div>
-          
-          <div className="inline-flex items-center gap-3 rounded-full bg-[#FDE035]/50 px-8 py-4 text-lg font-semibold text-[#0d2430]/70 cursor-not-allowed">
-            Coming Soon
           </div>
         </div>
       </section>

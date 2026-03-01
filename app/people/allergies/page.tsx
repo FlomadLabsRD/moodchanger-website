@@ -13,7 +13,7 @@ export default function AllergiesPage() {
             MoodChanger for Allergies
           </h1>
           <p className="mx-auto max-w-2xl text-lg leading-relaxed text-white/80 lg:text-xl">
-            Track how allergies really affect you—mood, sleep, focus—not just symptoms.
+            Track how allergies really affect you mood, sleep and focus. Not just symptoms.
           </p>
         </div>
       </section>
@@ -54,7 +54,7 @@ export default function AllergiesPage() {
               <div className="flex items-start gap-4">
                 <div className="w-2 h-2 rounded-full bg-[#FDE035] mt-3 flex-shrink-0"></div>
                 <p className="text-white/80 leading-relaxed">
-                  Shows you patterns like: &ldquo;Your focus drops 30% on high oak pollen days when you sleep less than 7 hours&rdquo;
+                  Shows you patterns like: Your focus drops 30% on high oak pollen days when you sleep less than 7 hours.
                 </p>
               </div>
               <div className="flex items-start gap-4">
@@ -76,12 +76,12 @@ export default function AllergiesPage() {
               <div className="space-y-6">
                 <div className="border-b border-white/10 pb-6">
                   <h3 className="text-lg font-semibold text-white mb-2">Daily check-in</h3>
-                  <p className="text-white/70">&ldquo;How are you feeling today?&rdquo; (1-10 scale)</p>
+                  <p className="text-white/70">How are you feeling today? (1-10 scale)</p>
                 </div>
                 
                 <div className="border-b border-white/10 pb-6">
                   <h3 className="text-lg font-semibold text-white mb-2">Pattern insights</h3>
-                  <p className="text-white/70">&ldquo;Your mood drops 2 days before pollen spikes&rdquo;</p>
+                  <p className="text-white/70">Your mood drops 2 days before pollen spikes</p>
                 </div>
                 
                 <div className="border-b border-white/10 pb-6">
@@ -92,7 +92,7 @@ export default function AllergiesPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-2">Suggestions</h3>
                   <p className="text-white/70">
-                    &ldquo;Try closing windows after 3pm&rdquo; or &ldquo;Your energy is higher with morning workouts during allergy season&rdquo;
+                    Try closing windows after 3pm or Your energy is higher with morning workouts during allergy season.
                   </p>
                 </div>
               </div>
@@ -112,12 +112,6 @@ export default function AllergiesPage() {
             </div>
           </div>
 
-          {/* CTA */}
-          <div className="text-center">
-            <div className="inline-flex items-center gap-3 rounded-full bg-[#FDE035]/50 px-8 py-4 text-lg font-semibold text-[#0d2430]/70 cursor-not-allowed">
-              Coming Soon
-            </div>
-          </div>
         </div>
       </section>
 

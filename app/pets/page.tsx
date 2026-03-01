@@ -1,4 +1,3 @@
-import Link from "next/link";
 import PageLayout from "../components/PageLayout";
 
 export default function PetsPage() {
@@ -19,14 +18,14 @@ export default function PetsPage() {
             Smart AI Pet Health Monitoring
           </p>
           <p className="mx-auto max-w-2xl text-lg leading-relaxed text-white/80 lg:text-xl">
-            One app for the whole family—humans and animals. Track health, emotions, and activities together with personalized insights to improve overall well-being.
+            One app for the whole family: humans and animals. Track health, emotions, and activities together with personalized insights to improve overall well-being.
           </p>
         </div>
       </section>
 
       {/* Presentation Section */}
       <section className="py-16">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-screen-2xl px-6">
           <div className="group relative z-10 overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-3 shadow-2xl backdrop-blur-sm transition-all duration-500 hover:border-[#FDE035]/30 hover:shadow-[#FDE035]/20">
             <div className="relative w-full overflow-hidden rounded-2xl pt-[45%]">
               <iframe
@@ -61,7 +60,7 @@ export default function PetsPage() {
 
       {/* Unified Ecosystem Section */}
       <section className="py-16 bg-gradient-to-br from-[#FDE035]/5 via-transparent to-transparent">
-        <div className="mx-auto max-w-6xl px-6">
+        <div className="mx-auto max-w-screen-2xl px-6">
           <h2 className="mb-6 text-3xl font-bold text-center text-white lg:text-4xl">
             A Unified Ecosystem for Your Whole Family
           </h2>
@@ -115,7 +114,7 @@ export default function PetsPage() {
 
       {/* Main Content */}
       <section className="py-16 border-t border-white/10">
-        <div className="mx-auto max-w-6xl px-6">
+        <div className="mx-auto max-w-screen-2xl px-6">
           {/* Description */}
           <div className="mb-16 text-center">
             <h2 className="mb-6 text-2xl font-semibold text-white lg:text-3xl">
@@ -318,7 +317,7 @@ export default function PetsPage() {
                     </svg>
                   </div>
                   <h4 className="text-lg font-semibold text-white mb-2">Other Pets</h4>
-                  <p className="text-white/60 text-sm">Birds, rabbits, reptiles—any companion animal</p>
+                  <p className="text-white/60 text-sm">Birds, herds, reptiles, any companion animal</p>
                 </div>
               </div>
             </div>
@@ -328,7 +327,7 @@ export default function PetsPage() {
 
       {/* Flomad Smart Devices Section */}
       <section className="py-16 border-t border-white/10 bg-gradient-to-br from-[#FDE035]/5 via-transparent to-transparent">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-screen-2xl px-6">
           <h3 className="mb-12 text-3xl font-bold text-white text-center">
             Flomad Smart Pet Devices
           </h3>
@@ -500,7 +499,7 @@ export default function PetsPage() {
           
           <div className="space-y-8">
             <div className="flex items-start gap-6">
-              <div className="w-8 h-8 rounded-full bg-[#FDE035] flex items-center justify-center text-[#2aa68a] font-semibold flex-shrink-0">
+              <div className="w-8 h-8 rounded-full bg-[#FDE035] flex items-center justify-center text-black font-semibold flex-shrink-0">
                 1
               </div>
               <div>
@@ -510,7 +509,7 @@ export default function PetsPage() {
             </div>
             
             <div className="flex items-start gap-6">
-              <div className="w-8 h-8 rounded-full bg-[#FDE035] flex items-center justify-center text-[#2aa68a] font-semibold flex-shrink-0">
+              <div className="w-8 h-8 rounded-full bg-[#FDE035] flex items-center justify-center text-black font-semibold flex-shrink-0">
                 2
               </div>
               <div>
@@ -520,17 +519,17 @@ export default function PetsPage() {
             </div>
             
             <div className="flex items-start gap-6">
-              <div className="w-8 h-8 rounded-full bg-[#FDE035] flex items-center justify-center text-[#2aa68a] font-semibold flex-shrink-0">
+              <div className="w-8 h-8 rounded-full bg-[#FDE035] flex items-center justify-center text-black font-semibold flex-shrink-0">
                 3
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-white mb-2">Pattern recognition</h4>
-                <p className="text-white/70">&ldquo;Your dog shows anxiety 2 days before thunderstorms&rdquo; or &ldquo;Your cat is most playful after morning sun&rdquo;</p>
+                <p className="text-white/70">Your dog shows anxiety two days before thunderstorms; or &ldquo;Your cat is most playful after morning sun&rdquo;</p>
               </div>
             </div>
             
             <div className="flex items-start gap-6">
-              <div className="w-8 h-8 rounded-full bg-[#FDE035] flex items-center justify-center text-[#2aa68a] font-semibold flex-shrink-0">
+              <div className="w-8 h-8 rounded-full bg-[#FDE035] flex items-center justify-center text-black font-semibold flex-shrink-0">
                 4
               </div>
               <div>
@@ -553,19 +552,6 @@ export default function PetsPage() {
             <p className="text-white/70">
               Optional: Share relevant patterns with your veterinarian to support better care.
             </p>
-          </div>
-          
-          <div className="inline-flex items-center gap-3 rounded-full bg-[#FDE035]/50 px-8 py-4 text-lg font-semibold text-[#0d2430]/70 cursor-not-allowed">
-            Coming Soon
-          </div>
-          
-          <div className="mt-8">
-            <Link 
-              href="/"
-              className="inline-flex items-center gap-2 text-[#FDE035] hover:text-[#FDE035]/80 transition-colors"
-            >
-              ← Back to Home
-            </Link>
           </div>
         </div>
       </section>

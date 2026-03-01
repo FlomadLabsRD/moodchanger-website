@@ -1,5 +1,5 @@
-import Link from "next/link";
 import PageLayout from "../components/PageLayout";
+import CaipoText from "../components/CaipoText";
 
 export default function AthletesPage() {
   return (
@@ -13,24 +13,26 @@ export default function AthletesPage() {
             MoodChanger for Athletes
           </h1>
           <p className="mx-auto max-w-2xl text-lg leading-relaxed text-white/80 lg:text-xl">
-            Train your mind as precisely as your body. Get real-time performance insights, personalized training plans, and mental preparation tools powered by AI and integrated wearable data.
+            Performance depends on both mind and body. MoodChanger helps athletes track readiness, build resilience,
+            recover smarter, and stay focused with real-time insights.
           </p>
         </div>
       </section>
 
       {/* Main Content */}
       <section className="py-16">
-        <div className="mx-auto max-w-6xl px-6">
+        <div className="mx-auto max-w-screen-2xl px-6">
           {/* Description */}
           <div className="mb-16 text-center">
             <h2 className="mb-6 text-2xl font-semibold text-white lg:text-3xl">
               AI-Powered Athletic Performance
             </h2>
             <p className="mx-auto max-w-3xl text-lg text-white/70 leading-relaxed">
-              CAIPO analyzes data from smart glasses, EEG hardware, smart rings, watches, and more to optimize your mental performance, reduce fatigue, and create personalized training plans that adapt to your body and mind.
+              <CaipoText text="CAIPO" /> combines pre-, in-, and post-session signals to monitor workload, fatigue, recovery,
+              and readiness, then turns that data into AI-powered actionable insights for smarter training and more consistent performance.
             </p>
             <div className="mt-6 text-[#FDE035] font-medium">
-              Real-time biometrics + AI analysis → Peak performance optimization
+              Real-time biometrics + AI-powered actionable insights -&gt; stronger readiness, recovery, and performance
             </div>
           </div>
 
@@ -39,6 +41,10 @@ export default function AthletesPage() {
             <h3 className="mb-8 text-2xl font-semibold text-white text-center">
               Built for Athletic Excellence
             </h3>
+            <p className="mx-auto mb-10 max-w-3xl text-center text-white/70 leading-relaxed">
+              Train smarter, recover faster, and compete with confidence. 
+              MoodChanger helps you turn daily data into winning habits for both mind and body.
+            </p>
             
             <div className="grid md:grid-cols-2 gap-8">
               {/* Pre-Performance Routines */}
@@ -52,20 +58,20 @@ export default function AthletesPage() {
                   <h4 className="text-xl font-semibold text-white mb-3">Pre-Performance Preparation</h4>
                 </div>
                 <p className="text-white/70 mb-6 leading-relaxed">
-                  Track what mental and physical preparation leads to your best performances. Build consistency in your routine.
+                  Build a sustainable routine that prepares your mind and body before every session, so you start focused, steady, and ready to perform.
                 </p>
                 <div className="space-y-2 text-sm text-white/60">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-[#FDE035] flex-shrink-0"></div>
-                    <span>Pre-game routine tracking</span>
+                    <span>Pre-session routine tracking</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-[#FDE035] flex-shrink-0"></div>
-                    <span>Mental state logging</span>
+                    <span>Mental and physical readiness check-ins</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-[#FDE035] flex-shrink-0"></div>
-                    <span>Confidence level patterns</span>
+                    <span>Confidence and consistency trends</span>
                   </div>
                 </div>
               </div>
@@ -81,20 +87,20 @@ export default function AthletesPage() {
                   <h4 className="text-xl font-semibold text-white mb-3">Recovery & Training Load</h4>
                 </div>
                 <p className="text-white/70 mb-6 leading-relaxed">
-                  Understand how training intensity affects your mental state and performance readiness.
+                  Balance effort and recovery with clearer insights into your levels of fatigue, workload, and your capacity to train without losing momentum.
                 </p>
                 <div className="space-y-2 text-sm text-white/60">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-[#FDE035] flex-shrink-0"></div>
-                    <span>Sleep quality correlation</span>
+                    <span>Sleep and recovery correlation</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-[#FDE035] flex-shrink-0"></div>
-                    <span>Training load impact</span>
+                    <span>Training load and fatigue patterns</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-[#FDE035] flex-shrink-0"></div>
-                    <span>Recovery optimization</span>
+                    <span>Recovery optimization guidance</span>
                   </div>
                 </div>
               </div>
@@ -107,10 +113,10 @@ export default function AthletesPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                     </svg>
                   </div>
-                  <h4 className="text-xl font-semibold text-white mb-3">Competition Psychology</h4>
+                  <h4 className="text-xl font-semibold text-white mb-3">Performance Readiness</h4>
                 </div>
                 <p className="text-white/70 mb-6 leading-relaxed">
-                  Track how pressure, environment, and mindset affect your competitive performance.
+                  Understand how pressure, environment, and mindset affect decisions and execution, so you can stay composed when performance matters most.
                 </p>
                 <div className="space-y-2 text-sm text-white/60">
                   <div className="flex items-center gap-2">
@@ -119,11 +125,11 @@ export default function AthletesPage() {
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-[#FDE035] flex-shrink-0"></div>
-                    <span>Environmental factors</span>
+                    <span>Environmental performance factors</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-[#FDE035] flex-shrink-0"></div>
-                    <span>Focus optimization</span>
+                    <span>Focus and resilience strategies</span>
                   </div>
                 </div>
               </div>
@@ -136,10 +142,10 @@ export default function AthletesPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                     </svg>
                   </div>
-                  <h4 className="text-xl font-semibold text-white mb-3">Team & Individual Balance</h4>
+                  <h4 className="text-xl font-semibold text-white mb-3">Coordinated Performance</h4>
                 </div>
                 <p className="text-white/70 mb-6 leading-relaxed">
-                  For team athletes: understand how team dynamics and individual preparation intersect.
+                  Strengthen your individual impact while improving team coordination through clearer communication, leadership awareness through shared performance patterns.
                 </p>
                 <div className="space-y-2 text-sm text-white/60">
                   <div className="flex items-center gap-2">
@@ -152,7 +158,7 @@ export default function AthletesPage() {
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-[#FDE035] flex-shrink-0"></div>
-                    <span>Team energy contribution</span>
+                    <span>Team coordination signals</span>
                   </div>
                 </div>
               </div>
@@ -167,45 +173,50 @@ export default function AthletesPage() {
           <h3 className="mb-12 text-2xl font-semibold text-white text-center">
             Athletic Performance Tracking
           </h3>
-          
+            <p className="mx-auto mb-10 max-w-3xl text-center text-white/70 leading-relaxed">
+              Turn daily check-ins into a competitive edge. 
+              Track your mindset, connect it to results, 
+              and get clear actions to improve every session.
+            </p>
+            
           <div className="space-y-8">
             <div className="flex items-start gap-6">
-              <div className="w-8 h-8 rounded-full bg-[#FDE035] flex items-center justify-center text-[#2aa68a] font-semibold flex-shrink-0">
+              <div className="w-8 h-8 rounded-full bg-[#FDE035] flex items-center justify-center text-black font-semibold flex-shrink-0">
                 1
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-white mb-2">Pre-performance check-in</h4>
-                <p className="text-white/70">Log confidence, energy, focus, and physical readiness before training or competition</p>
+                <p className="text-white/70 md:whitespace-nowrap">Check in before every session. Log confidence, energy, focus, and readiness so you step in prepared to perform.</p>
               </div>
             </div>
             
             <div className="flex items-start gap-6">
-              <div className="w-8 h-8 rounded-full bg-[#FDE035] flex items-center justify-center text-[#2aa68a] font-semibold flex-shrink-0">
+              <div className="w-8 h-8 rounded-full bg-[#FDE035] flex items-center justify-center text-black font-semibold flex-shrink-0">
                 2
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-white mb-2">Performance correlation</h4>
-                <p className="text-white/70">Connect mental state data with actual performance metrics and outcomes</p>
+                <p className="text-white/70 md:whitespace-nowrap">See how your mental state impacts your results, and identify the conditions that lead to stronger performance.</p>
               </div>
             </div>
             
             <div className="flex items-start gap-6">
-              <div className="w-8 h-8 rounded-full bg-[#FDE035] flex items-center justify-center text-[#2aa68a] font-semibold flex-shrink-0">
+              <div className="w-8 h-8 rounded-full bg-[#FDE035] flex items-center justify-center text-black font-semibold flex-shrink-0">
                 3
               </div>
               <div>
-                <h4 className="text-lg font-semibold text-white mb-2">Pattern recognition</h4>
-                <p className="text-white/70">&ldquo;Your best performances happen when you sleep 8+ hours and do morning visualization&rdquo;</p>
+                <h4 className="text-lg font-semibold text-white mb-2">Analyze your performance patterns</h4>
+                <p className="text-white/70">Uncover the habits behind your best days, like quality sleep, routines, and repeat what works.</p>
               </div>
             </div>
             
             <div className="flex items-start gap-6">
-              <div className="w-8 h-8 rounded-full bg-[#FDE035] flex items-center justify-center text-[#2aa68a] font-semibold flex-shrink-0">
+              <div className="w-8 h-8 rounded-full bg-[#FDE035] flex items-center justify-center text-black font-semibold flex-shrink-0">
                 4
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-white mb-2">Optimization recommendations</h4>
-                <p className="text-white/70">Personalized mental training suggestions based on your unique patterns</p>
+                <p className="text-white/70">Get personalized training guidance based on your patterns to train smarter, recover faster, and compete with confidence.</p>
               </div>
             </div>
           </div>
@@ -218,25 +229,11 @@ export default function AthletesPage() {
           <div className="mb-8">
             <h3 className="mb-4 text-xl font-semibold text-white">All Sports, All Levels</h3>
             <p className="text-white/70 mb-6">
-              From weekend warriors to professional athletes. Individual and team sports. 
-              Mental training that scales with your ambitions.
+              From first training sessions to elite competition, MoodChanger supports your journey across individual and team sports.
             </p>
             <p className="text-white/70">
-              Your performance data stays private. Never shared with coaches, teams, or sponsors without your explicit permission.
+              Your data stays private and is only shared with your permission.
             </p>
-          </div>
-          
-          <div className="inline-flex items-center gap-3 rounded-full bg-[#FDE035]/50 px-8 py-4 text-lg font-semibold text-[#0d2430]/70 cursor-not-allowed">
-            Coming Soon
-          </div>
-          
-          <div className="mt-8">
-            <Link 
-              href="/people"
-              className="inline-flex items-center gap-2 text-[#FDE035] hover:text-[#FDE035]/80 transition-colors"
-            >
-              ← Back to People
-            </Link>
           </div>
         </div>
       </section>

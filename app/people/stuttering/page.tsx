@@ -28,7 +28,7 @@ export default function StutteringPage() {
             </h2>
             <p className="text-lg text-white/70 leading-relaxed">
               Stuttering changes with stress, fatigue, and context. MoodChanger helps you notice what affects 
-              your fluency—without judgment.
+              your fluency, without judgment.
             </p>
           </div>
 
@@ -75,7 +75,7 @@ export default function StutteringPage() {
                 <div className="w-3 h-3 rounded-full bg-[#FDE035] mt-2 flex-shrink-0"></div>
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-2">Notice patterns</h3>
-                  <p className="text-white/70">&ldquo;Your fluency is 40% better on days you sleep 8+ hours&rdquo;</p>
+                  <p className="text-white/70">Your fluency is 40% better on days you sleep 8+ hours</p>
                 </div>
               </div>
             </div>
@@ -103,12 +103,6 @@ export default function StutteringPage() {
             </p>
           </div>
 
-          {/* CTA */}
-          <div className="text-center">
-            <div className="inline-flex items-center gap-3 rounded-full bg-[#FDE035]/50 px-8 py-4 text-lg font-semibold text-[#0d2430]/70 cursor-not-allowed">
-              Coming Soon
-            </div>
-          </div>
         </div>
       </section>
 
