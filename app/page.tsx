@@ -22,7 +22,7 @@ export default function Page() {
             <p className="mx-auto max-w-3xl text-lg leading-relaxed text-white/70 lg:text-xl">
               <span className="font-semibold text-white">All your AI in one app.</span>
               <br />
-              Powered by <CaipoText text="CAIPO" />, a Chief AI Productivity Officer.
+              Powered by <CaipoText text="FloBrain" />,
               <br />
               Boost productivity, wellness, and lifestyle.
             </p>
@@ -144,7 +144,7 @@ export default function Page() {
             The MoodChanger Solution
           </h2>
           <p className="mb-12 text-center text-white/70 max-w-3xl mx-auto text-lg">
-            <CaipoText text="CAIPO" /> and MoodChanger work together to provide intelligent, personalized support
+            <CaipoText text="CAIPO" /> and MoodChanger work together to provide intelligent, personalized support.
           </p>
           
           <div className="grid gap-6 md:grid-cols-2">

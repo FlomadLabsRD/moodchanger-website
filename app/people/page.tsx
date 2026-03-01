@@ -15,11 +15,9 @@ export default function PeoplePage() {
           </h1>
           <p className="mx-auto max-w-2xl text-lg leading-relaxed text-white/80 lg:text-xl">
           Life is easier when you understand what affects how you feel. 
-          <br />
           MoodChanger gives you 24/7 AI support with real-time 
-          <br />
-          and historical insights so you can track patterns, reduce perceived stress,
-          <br />
+          and historical insights so you can track patterns, <br></br>reduce perceived stress,
+
           and build healthier habits before small issues escalate.
           </p>
         </div>
