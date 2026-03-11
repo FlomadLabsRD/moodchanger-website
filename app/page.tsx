@@ -66,7 +66,7 @@ export default function Page() {
       <section className="py-16 border-t border-white/10">
         <div className="mx-auto max-w-screen-2xl px-6">
           <h2 className="mb-6 text-3xl font-bold text-center text-white lg:text-4xl">
-            The Challenge
+            The ChallengeS
           </h2>
           <p className="mb-12 text-center text-white/70 max-w-3xl mx-auto text-lg">
             Managing your health and wellness can be simpler with the right support.
