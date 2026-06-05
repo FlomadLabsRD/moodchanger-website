@@ -1,6 +1,6 @@
 # MoodChanger — Athletes
 
-Cinematic " x "redesign of the MoodChanger `/athletes` page.
+Cinematic "x"redesign of the MoodChanger `/athletes` page.
 
 ## Files
 - `index.html` — the page
