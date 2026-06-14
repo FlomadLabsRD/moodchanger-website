@@ -100,7 +100,7 @@ ul{margin:0; padding:0; list-style:none}
   box-shadow:0 30px 60px -28px rgba(0,0,0,.7);
   opacity:0; visibility:hidden; transform:translateY(8px); transition:.3s var(--ease); z-index:50;
 }
-.menu.scroll{max-height:340px; overflow-y:auto}
+.menu.scroll{max-height:none; overflow:visible; display:grid; grid-template-columns:1fr 1fr; gap:2px; min-width:430px}
 .nav .item.has-menu:hover .menu, .nav .item.has-menu:focus-within .menu{opacity:1; visibility:visible; transform:none}
 .menu a{display:block; padding:9px 13px; border-radius:9px; font-size:.9rem; color:var(--muted-d); transition:.2s}
 .menu a:hover{background:rgba(253,224,53,.12); color:#fff}
@@ -347,7 +347,7 @@ section{position:relative}
   .nav .item.active > a::after{display:none}
   .menu{position:static; opacity:1; visibility:visible; transform:none; background:transparent; border:0; box-shadow:none;
     padding:0 0 6px 14px; max-height:none}
-  .menu.scroll{max-height:none}
+  .menu.scroll{max-height:none; display:block; min-width:0}
   .menu a{color:var(--muted-d2)}
   .chev{display:none}
   .burger{display:flex}

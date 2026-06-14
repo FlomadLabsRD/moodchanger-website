@@ -159,7 +159,7 @@
 
   /* ---------- Hero + closing video autoplay nudge ---------- */
   function initVideo() {
-    var vids = [].slice.call(document.querySelectorAll('.hero-video, .closing-video'));
+    var vids = [].slice.call(document.querySelectorAll('.hero-video, .closing-video, .how-video'));
     if (!vids.length) return;
     function nudge() {
       vids.forEach(function (v) { v.muted = true; var p = v.play(); if (p && p.catch) p.catch(function(){}); });
@@ -170,23 +170,19 @@
     document.addEventListener('touchstart', nudge, { once: true });
   }
 
-  /* ---------- How-it-works tab switching (home page) ---------- */
+  /* ---------- How-it-works tabbed video ---------- */
   function initHowTabs() {
     var tabs = [].slice.call(document.querySelectorAll('.how-tab'));
     var panels = [].slice.call(document.querySelectorAll('.how-panel'));
     if (!tabs.length || !panels.length) return;
-    tabs.forEach(function (tab) {
-      tab.addEventListener('click', function () {
-        var key = tab.getAttribute('data-tab');
-        tabs.forEach(function (t) { t.classList.remove('active'); });
-        panels.forEach(function (p) { p.classList.remove('active'); });
-        tab.classList.add('active');
-        var panel = document.querySelector('.how-panel[data-panel="' + key + '"]');
-        if (panel) {
-          panel.classList.add('active');
-          var vid = panel.querySelector('.how-video');
-          if (vid) { vid.muted = true; var p = vid.play(); if (p && p.catch) p.catch(function(){}); }
-        }
+    function activate(key) {
+      tabs.forEach(function (t) { t.classList.toggle('active', t.getAttribute('data-tab') === key); });
+      panels.forEach(function (p) { p.classList.toggle('active', p.getAttribute('data-panel') === key); });
+    }
+    tabs.forEach(function (t) {
+      t.addEventListener('click', function (e) {
+        if (e.target.closest('.explore')) return; // let the Explore link navigate
+        activate(t.getAttribute('data-tab'));
       });
     });
   }

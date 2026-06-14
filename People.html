@@ -8,6 +8,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="athletes.css">
+<style>
+  /* anchor offset so the section title clears the fixed header on deep-link */
+  #excellence{scroll-margin-top:64px}
+</style>
 </head>
 <body id="top">
 
@@ -16,7 +20,7 @@
 <!-- ============================================================ HEADER -->
 <header class="site-header" data-header>
   <div class="header-row">
-    <a class="brand" href="index.html" aria-label="MoodChanger home">
+    <a class="brand" href="Home.html" aria-label="MoodChanger home">
       <img class="mark" src="assets/flomadlogo.svg" alt="">
       <span class="word">Mood<span class="a">Changer</span>.ai</span>
     </a>
@@ -29,45 +33,45 @@
       </div>
 
       <div class="item has-menu">
-        <button class="trigger" type="button">Wearables
+        <a class="trigger" href="Wearables.html">Wearables
           <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
+        </a>
         <div class="menu scroll">
-          <a href="Wearables.html#smartglasses">SmartGlasses</a>
-          <a href="Wearables.html#eeg">EEG Hardware</a>
-          <a href="Wearables.html#ring">Smart Ring</a>
-          <a href="Wearables.html#brain">Brain Monitor</a>
-          <a href="Wearables.html#footpods">Smart Foot Pods</a>
-          <a href="Wearables.html#insoles">Smart Insoles</a>
-          <a href="Wearables.html#watch">Smart Watch</a>
+          <a href="Wearables.html#smart-glasses">SmartGlasses</a>
+          <a href="Wearables.html#eeg-hardware">EEG Hardware</a>
+          <a href="Wearables.html#smart-ring">Smart Ring</a>
+          <a href="Wearables.html#brain-monitor">Brain Monitor</a>
+          <a href="Wearables.html#smart-foot-pods">Smart Foot Pods</a>
+          <a href="Wearables.html#smart-insoles">Smart Insoles</a>
+          <a href="Wearables.html#smart-watch">Smart Watch</a>
           <a href="Wearables.html#exoskeleton">Exoskeleton</a>
-          <a href="Wearables.html#gloves">Smart Gloves</a>
-          <a href="Wearables.html#shirt">Smart Shirt</a>
-          <a href="Wearables.html#suit">Smart Suit</a>
-          <a href="Wearables.html#posture">Smart Posture Trainer</a>
+          <a href="Wearables.html#smart-gloves">Smart Gloves</a>
+          <a href="Wearables.html#smart-shirt">Smart Shirt</a>
+          <a href="Wearables.html#smart-suit">Smart Suit</a>
+          <a href="Wearables.html#smart-posture-trainer">Smart Posture Trainer</a>
         </div>
       </div>
 
       <div class="item has-menu">
-        <button class="trigger" type="button">Smart Devices
+        <a class="trigger" href="SmartDevices.html">Smart Devices
           <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
+        </a>
         <div class="menu">
-          <a href="SmartDevices.html#insights">AI Health Insights</a>
-          <a href="SmartDevices.html#scale">Smart Scale</a>
-          <a href="SmartDevices.html#bottle">Smart Bottle</a>
-          <a href="SmartDevices.html#robots">Smart Robots</a>
+          <a href="SmartDevices.html#ai-insights">AI Health Insights</a>
+          <a href="SmartDevices.html#smart-scale">Smart Scale</a>
+          <a href="SmartDevices.html#smart-bottle">Smart Bottle</a>
+          <a href="SmartDevices.html#smart-robots">Smart Robots</a>
         </div>
       </div>
 
       <div class="item has-menu active">
-        <button class="trigger" type="button">People
+        <a class="trigger" href="People.html">People
           <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
+        </a>
         <div class="menu">
-          <a href="#allergies">Allergies</a>
-          <a href="#stuttering">Stuttering</a>
-          <a href="#cognitive">Cognitive Loss</a>
+          <a href="People.html#allergies">Allergies</a>
+          <a href="People.html#stuttering">Stuttering</a>
+          <a href="People.html#cognitive">Cognitive Loss</a>
         </div>
       </div>
 
@@ -82,10 +86,9 @@
   <!-- ============================================================ HERO -->
   <section class="hero">
     <div class="hero-media" data-parallax="0.16">
-      <div class="media" style="position:absolute;inset:0">
-        <div class="grain"></div>
-        <div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width=".7"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      </div>
+      <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/feature-2.jpg">
+        <source src="assets/people-hero.mp4" type="video/mp4">
+      </video>
     </div>
 
     <div class="hero-inner">
@@ -129,8 +132,7 @@
         <!-- 01 Allergies -->
         <article class="feature reveal" id="allergies">
           <div class="media">
-            <div class="grain"></div>
-            <div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width=".8"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="zoom"><img src="assets/people-allergies.jpg" alt="Child managing seasonal allergies" loading="lazy"></div>
             <div class="vig"></div>
             <span class="idx">01</span>
             <span class="tag"><span class="dot"></span>Allergy management</span>
@@ -151,8 +153,7 @@
         <!-- 02 Stuttering -->
         <article class="feature reveal" id="stuttering">
           <div class="media">
-            <div class="grain"></div>
-            <div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width=".8"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="zoom"><img src="assets/people-stuttering.jpg" alt="Speech therapy session" loading="lazy"></div>
             <div class="vig"></div>
             <span class="idx">02</span>
             <span class="tag"><span class="dot"></span>Speech support</span>
@@ -173,8 +174,7 @@
         <!-- 03 Cognitive Loss -->
         <article class="feature reveal" id="cognitive">
           <div class="media">
-            <div class="grain"></div>
-            <div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width=".8"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="zoom"><img src="assets/people-cognitive.jpg" alt="Senior doing a cognitive exercise" loading="lazy"></div>
             <div class="vig"></div>
             <span class="idx">03</span>
             <span class="tag"><span class="dot"></span>Cognitive health</span>
@@ -234,10 +234,9 @@
   <!-- ============================================================ CLOSING -->
   <section class="closing">
     <div class="closing-media" data-parallax="0.1">
-      <div class="media" style="position:absolute;inset:0">
-        <div class="grain"></div>
-        <div class="glyph" style="font-size:14vw;color:rgba(255,255,255,.06);font-weight:700;letter-spacing:-.04em;display:grid;place-items:center">PEOPLE</div>
-      </div>
+      <video class="closing-video" autoplay muted loop playsinline preload="auto" poster="assets/people-allergies.jpg">
+        <source src="assets/people-closing.mp4" type="video/mp4">
+      </video>
     </div>
     <div class="inner">
       <span class="closing-rule reveal" data-rev="fade" aria-hidden="true"></span>
@@ -252,15 +251,47 @@
 <!-- ============================================================ FOOTER -->
 <footer class="site-footer">
   <div class="wrap footer-inner">
-    <a class="brand" href="index.html"><img class="mark" src="assets/flomadlogo.svg" alt="" style="width:34px;height:34px"><span class="word">Mood<span class="a">Changer</span>.ai</span></a>
+    <a class="brand" href="Home.html"><img class="mark" src="assets/flomadlogo.svg" alt="" style="width:34px;height:34px"><span class="word">Mood<span class="a">Changer</span>.ai</span></a>
     <p>A <a class="lk" href="https://www.flolabsinnovations.com/" target="_blank" rel="noopener">Flo Labs</a> product</p>
     <p>Powered by <a href="https://caipo.ai" target="_blank" rel="noopener" class="caipo">CAIPO</a></p>
     <p class="fine"><span class="caipo">CAIPO</span> is the intelligent layer that helps MoodChanger understand patterns in your daily life.</p>
   </div>
 </footer>
 
-<a class="backhome" href="index.html" aria-label="Back to home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>Home</a>
+<a class="backhome" href="Home.html" aria-label="Back to home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>Home</a>
 
 <script src="athletes.js"></script>
+<script>
+(function(){
+  var IDS=['allergies','stuttering','cognitive'];
+  function gotoCondition(id, smooth){
+    var idx=IDS.indexOf(id);
+    if(idx<0) return;
+    var dots=document.querySelectorAll('.carousel-dots button');
+    if(dots[idx]) dots[idx].click();           // drives the existing carousel
+    var sec=document.getElementById('excellence');
+    if(sec) window.scrollTo({top:Math.max(0, sec.offsetTop-56), behavior: smooth?'smooth':'auto'});
+  }
+  // deep-link on load (e.g. arriving from another page's People menu)
+  function fromHash(smooth){
+    var id=(location.hash||'').replace('#','');
+    if(IDS.indexOf(id)!==-1){ gotoCondition(id, smooth); return true; }
+    return false;
+  }
+  window.addEventListener('load', function(){ setTimeout(function(){ fromHash(false); }, 250); });
+  // same-page clicks on the People menu
+  document.addEventListener('click', function(e){
+    var a=e.target.closest('a[href]'); if(!a) return;
+    var href=a.getAttribute('href');
+    var m=href && href.match(/#(allergies|stuttering|cognitive)$/);
+    if(m && (href.charAt(0)==='#' || href.indexOf('People.html')===0)){
+      e.preventDefault();
+      if(history.replaceState) history.replaceState(null,'','#'+m[1]);
+      gotoCondition(m[1], true);
+      document.body.classList.remove('nav-open');
+    }
+  });
+})();
+</script>
 </body>
 </html>

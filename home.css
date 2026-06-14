@@ -4,9 +4,10 @@
    (tokens, header, footer, media, reveals all inherited)
    ============================================================ */
 
-/* ---------- HERO (centered headline + presentation showcase) ---------- */
+/* ---------- HERO (full-screen headline, zoom-out entrance) ---------- */
 .home-hero{position:relative; background:var(--ink); color:#fff; overflow:hidden;
-  padding:clamp(140px,18vh,210px) 0 clamp(70px,9vw,120px)}
+  min-height:100svh; display:flex; flex-direction:column; align-items:center; justify-content:center;
+  padding:clamp(120px,16vh,180px) 0 clamp(80px,10vh,120px)}
 .home-hero .glow{position:absolute; inset:0; z-index:0;
   background:
     radial-gradient(60% 50% at 50% 0%, rgba(253,224,53,.14), transparent 70%),
@@ -17,12 +18,21 @@
   background-size:64px 64px;
   -webkit-mask-image:radial-gradient(120% 90% at 50% 0%, #000, transparent 75%);
           mask-image:radial-gradient(120% 90% at 50% 0%, #000, transparent 75%)}
-.home-hero .inner{position:relative; z-index:2; width:min(var(--maxw),90vw); margin-inline:auto; text-align:center}
-.home-hero .head-accent{font-size:clamp(2rem,5.2vw,3.6rem); font-weight:500; letter-spacing:-.03em; color:var(--yellow);
-  line-height:1.04; text-wrap:balance; max-width:18ch; margin-inline:auto; text-shadow:0 2px 40px rgba(253,224,53,.18)}
+.home-hero .inner{position:relative; z-index:2; width:min(1500px,94vw); margin-inline:auto; text-align:center;
+  opacity:1; transform-origin:center 42%; animation:heroZoom 1.5s cubic-bezier(.16,.84,.34,1) both}
+@keyframes heroZoom{from{transform:scale(1.14)} to{transform:scale(1)}}
+@media (prefers-reduced-motion:reduce){.home-hero .inner{animation:none}}
+.home-hero .head-accent{font-size:clamp(2.4rem,6.6vw,5.4rem); font-weight:800; letter-spacing:-.035em; color:var(--yellow);
+  line-height:1.02; text-wrap:balance; max-width:none; margin-inline:auto; text-shadow:0 2px 40px rgba(253,224,53,.18)}
 .home-hero .sub{margin-top:clamp(22px,3vw,32px); font-size:clamp(1.1rem,1.7vw,1.5rem); line-height:1.5; color:var(--muted-d); font-weight:400}
 .home-hero .sub .strong{color:#fff; font-weight:600}
 .home-hero .sub .caipo{color:var(--caipo); font-weight:600}
+.home-hero .hero-cue{margin-top:clamp(40px,6vh,72px); display:inline-flex; flex-direction:column; align-items:center; gap:12px}
+.home-hero .hero-cue .txt{font-size:.72rem; letter-spacing:.28em; text-transform:uppercase; color:rgba(255,255,255,.55)}
+.home-hero .hero-cue .ln{width:1px; height:46px; background:linear-gradient(180deg, rgba(255,255,255,.5), transparent); position:relative; overflow:hidden}
+.home-hero .hero-cue .ln::after{content:""; position:absolute; left:0; top:-50%; width:100%; height:50%; background:var(--yellow); animation:cueDown 1.9s var(--ease) infinite}
+@keyframes cueDown{0%{top:-50%}100%{top:110%}}
+@media (prefers-reduced-motion:reduce){.home-hero .hero-cue .ln::after{animation:none}}
 
 /* presentation showcase */
 .showcase{position:relative; z-index:2; width:min(1180px,92vw); margin:clamp(48px,6vw,76px) auto 0}
@@ -70,8 +80,8 @@
   background:rgba(253,224,53,.16); border:1px solid rgba(253,224,53,.34); color:var(--yellow-deep); transition:transform .45s var(--ease)}
 .sol:hover .ic{transform:translateY(-4px)}
 .sol .ic svg{width:36px; height:36px}
-.sol h3{font-size:1.45rem; font-weight:600; letter-spacing:-.02em}
-.sol p{margin-top:13px; color:var(--muted-l); font-size:1.02rem; line-height:1.6}
+.sol h3{font-size:1.45rem; font-weight:700; letter-spacing:-.02em; color:var(--ink)}
+.sol p{margin-top:13px; color:#3a4b53; font-size:1.02rem; line-height:1.6}
 
 /* ---------- HOW IT WORKS (tabbed video: big screen + tabs below) ---------- */
 .how-stage{margin-top:clamp(48px,6vw,76px)}
